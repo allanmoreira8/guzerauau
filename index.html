@@ -1,237 +1,626 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-        <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Always force latest IE rendering engine -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Meta Keyword -->
-        <meta name="keywords" content="guzera uau, guzera, guzera leiteiro, guzera de leite, guzera brasil, guzerá, guzerabr, guzera top">
-    	<meta name="news_keywords" content="gado, zebu, leite, uau" />
-        <!-- meta character set -->
-        <meta charset="utf-8">
-        <link rel="alternate icon" class="js-site-favicon" type="image/png" href="img/icons/logo_v2.png">
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guzerá UAU — Genética de excelência no Guzerá Leiteiro. Tourinhos registrados à venda. Crisólita, MG.">
+    <meta name="keywords" content="guzerá uau, guzerá leiteiro, tourinhos guzerá, guzera de leite, melhoramento genético">
+    <title>Guzerá UAU — Genética que Transforma</title>
+    <link rel="icon" type="image/png" href="img/icons/logo_v2.png">
 
-        <!-- Site Title -->
-        <title>Guzerá UAU</title>
-        
-        <!--
-        Google Fonts
-        ============================================= -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-		
-        <!--
-        CSS
-        ============================================= -->
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Fancybox -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <!-- owl carousel -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <!-- Animate -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- Main Responsive -->
-        <link rel="stylesheet" href="css/responsive.css">
-		
-		
-		<!-- Modernizer Script for old Browsers -->
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		
-    </head>
-	
-    <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'Georgia', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
 
-        <!--
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar-fixed-top">
-            <div class="container">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
+    <style>
+      #slider-track > div { transition: opacity 1.2s ease; }
+      .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+      .reveal.shown { opacity: 1; transform: translateY(0); }
+      .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; } .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+      @keyframes wp-ring { 0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)} 60%{box-shadow:0 0 0 12px rgba(37,211,102,0)} }
+      .wp-ring { animation: wp-ring 2.5s infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+      .blink { animation: blink 1.8s infinite; }
+      #navbar { transition: background .35s ease, box-shadow .35s ease; }
+    </style>
+</head>
 
-                    <!-- logo -->
-                    <h1 class="navbar-brand">
-                        <a href="#body">
-                            <img src="img/logo_002.png" alt="Guzerá UAU Logo" height="70" width="150">
-                        </a>
-                    </h1>
-                    <!-- /logo -->
+<body class="font-sans bg-white text-stone-600 antialiased">
 
-                    </div>
+<!-- WhatsApp float -->
+<a href="https://api.whatsapp.com/send?phone=5533988349125&text=Olá!%20Tenho%20interesse%20nos%20tourinhos%20Guzerá%20UAU."
+   target="_blank"
+   class="fixed bottom-8 right-8 z-50 w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center text-white text-2xl shadow-xl transition-all hover:scale-110 wp-ring">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-                    <!-- main nav -->
-                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
-                        <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="#home">Home</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                        </ul>
-                    </nav>
-                    <!-- /main nav -->
-                </div>
+<!-- ===================== NAVBAR ===================== -->
+<header id="navbar" class="fixed inset-x-0 top-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#hero">
+      <img src="img/logo_002.png" alt="Guzerá UAU" class="h-12 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#sobre"     class="text-xs font-semibold tracking-widest uppercase text-stone-200 hover:text-red-500 transition-colors">Sobre</a>
+      <a href="#raca"      class="text-xs font-semibold tracking-widest uppercase text-stone-200 hover:text-red-500 transition-colors">A Raça</a>
+      <a href="#genetica"  class="text-xs font-semibold tracking-widest uppercase text-stone-200 hover:text-red-500 transition-colors">Genética</a>
+      <a href="#tourinhos" class="text-xs font-semibold tracking-widest uppercase text-stone-200 hover:text-red-500 transition-colors">Tourinhos</a>
+      <a href="#contato"   class="text-xs font-semibold tracking-widest uppercase text-stone-200 hover:text-red-500 transition-colors">Contato</a>
+      <a href="https://api.whatsapp.com/send?phone=5533988349125" target="_blank"
+         class="flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white text-xs font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-colors">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </nav>
+    <button id="burger" class="lg:hidden text-white p-2 hover:text-red-500 transition-colors">
+      <i id="burger-icon" class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-stone-950/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 py-3 space-y-0">
+      <a href="#sobre"     class="block py-3 text-xs font-semibold tracking-widest uppercase text-stone-300 border-b border-stone-800 hover:text-red-500 transition-colors">Sobre</a>
+      <a href="#raca"      class="block py-3 text-xs font-semibold tracking-widest uppercase text-stone-300 border-b border-stone-800 hover:text-red-500 transition-colors">A Raça</a>
+      <a href="#genetica"  class="block py-3 text-xs font-semibold tracking-widest uppercase text-stone-300 border-b border-stone-800 hover:text-red-500 transition-colors">Genética</a>
+      <a href="#tourinhos" class="block py-3 text-xs font-semibold tracking-widest uppercase text-stone-300 border-b border-stone-800 hover:text-red-500 transition-colors">Tourinhos</a>
+      <a href="#contato"   class="block py-3 text-xs font-semibold tracking-widest uppercase text-stone-300 hover:text-red-500 transition-colors">Contato</a>
+    </div>
+  </div>
+</header>
 
+<!-- ===================== HERO ===================== -->
+<section id="hero" class="relative h-screen min-h-[640px] overflow-hidden">
+  <div id="slider-track" class="absolute inset-0">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/slider/drone_aerial.jpg'); opacity:1"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/slider/close_up_group.jpg'); opacity:0"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('img/slider/IMG_2323.jpg'); opacity:0"></div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-stone-950/60 via-stone-950/45 to-stone-950/85"></div>
+
+  <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
+    <span class="inline-flex items-center gap-2 border border-red-500/40 bg-red-900/15 backdrop-blur-sm text-red-300 text-xs font-semibold tracking-[.25em] uppercase px-5 py-2.5 rounded-full mb-8">
+      <i class="fas fa-seedling text-red-500 text-xs"></i>
+      Guzerá Leiteiro de Excelência
+    </span>
+    <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-black leading-[1.05] mb-5">
+      Guzerá é a raça,<br>
+      <em class="text-red-500 not-italic">UAU</em> é a marca!
+    </h1>
+    <p class="text-stone-300 text-lg md:text-xl font-light max-w-xl mb-10 leading-relaxed">
+      Genética séria e paixão pelo gado. Tourinhos Guzerá Leiteiro registrados prontos para transformar seu rebanho.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#tourinhos"
+         class="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-500 text-white font-bold text-xs tracking-widest uppercase px-8 py-4 rounded transition-all hover:-translate-y-0.5 shadow-lg shadow-red-900/30">
+        <i class="fas fa-star"></i>Tourinhos à Venda
+      </a>
+      <a href="#sobre"
+         class="inline-flex items-center justify-center gap-3 border border-white/40 hover:border-white text-white font-bold text-xs tracking-widest uppercase px-8 py-4 rounded transition-all hover:-translate-y-0.5">
+        <i class="fas fa-arrow-right"></i>Conhecer a Fazenda
+      </a>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+    <button class="slider-dot h-1 rounded-full bg-red-500 w-8 transition-all duration-300"></button>
+    <button class="slider-dot h-1 rounded-full bg-white/30 w-2 transition-all duration-300"></button>
+    <button class="slider-dot h-1 rounded-full bg-white/30 w-2 transition-all duration-300"></button>
+  </div>
+
+  <!-- Arrows -->
+  <button id="slide-prev" class="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border border-white/30 hover:border-red-500 text-white hover:text-red-500 rounded-full items-center justify-center transition-all">
+    <i class="fas fa-chevron-left text-sm"></i>
+  </button>
+  <button id="slide-next" class="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border border-white/30 hover:border-red-500 text-white hover:text-red-500 rounded-full items-center justify-center transition-all">
+    <i class="fas fa-chevron-right text-sm"></i>
+  </button>
+</section>
+
+<!-- ===================== TRUST BAR ===================== -->
+<div class="bg-red-50 border-y border-red-200">
+  <div class="max-w-7xl mx-auto px-6 py-5">
+    <div class="grid grid-cols-2 md:grid-cols-4 md:divide-x divide-red-200 gap-y-4 md:gap-y-0">
+      <div class="flex items-center gap-3 md:px-6 md:first:pl-0">
+        <i class="fas fa-certificate text-red-600 text-xl flex-shrink-0"></i>
+        <div>
+          <p class="text-xs font-bold text-stone-900 uppercase tracking-wide">Registro ABCZ</p>
+          <p class="text-xs text-stone-500 mt-0.5">Genealogia documentada</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:px-6">
+        <i class="fas fa-dna text-red-600 text-xl flex-shrink-0"></i>
+        <div>
+          <p class="text-xs font-bold text-stone-900 uppercase tracking-wide">Avaliação por DEPs</p>
+          <p class="text-xs text-stone-500 mt-0.5">Seleção técnica e rigorosa</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:px-6">
+        <i class="fas fa-tint text-red-600 text-xl flex-shrink-0"></i>
+        <div>
+          <p class="text-xs font-bold text-stone-900 uppercase tracking-wide">Guzerá Leiteiro</p>
+          <p class="text-xs text-stone-500 mt-0.5">Aptidão leiteira comprovada</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 md:px-6">
+        <i class="fab fa-whatsapp text-red-600 text-xl flex-shrink-0"></i>
+        <div>
+          <p class="text-xs font-bold text-stone-900 uppercase tracking-wide">Atendimento Direto</p>
+          <p class="text-xs text-stone-500 mt-0.5">Fale com o produtor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SOBRE ===================== -->
+<section id="sobre" class="py-24 md:py-32 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+      <!-- Image -->
+      <div class="relative reveal">
+        <img src="img/slider/IMG_3232.jpg" alt="Rebanho Guzerá UAU" class="w-full h-[480px] object-cover shadow-2xl">
+        <div class="absolute -bottom-5 -right-5 hidden md:block bg-red-600 text-stone-900 p-7 shadow-xl">
+          <p class="font-serif text-5xl font-black leading-none">UAU</p>
+          <p class="text-xs font-bold tracking-[.2em] uppercase mt-1">Guzerá</p>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="reveal d2">
+        <p class="text-stone-400 text-xs font-bold tracking-[.3em] uppercase mb-4">Sobre a Fazenda</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-stone-900 font-bold leading-tight mb-5">
+          Uma paixão que se transforma em genética de qualidade
+        </h2>
+        <div class="w-12 h-0.5 bg-red-600 mb-7"></div>
+        <p class="text-stone-500 leading-relaxed mb-5 text-[15px]">
+          No Guzerá UAU, o gado não é apenas negócio — é vocação. Trabalhamos com o Guzerá Leiteiro com dedicação, seriedade e um amor genuíno pelos animais que faz toda diferença na qualidade da nossa genética.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-10 text-[15px]">
+          Nosso programa de melhoramento é conduzido com rigor técnico e critério zootécnico, sempre buscando animais com excelente morfologia, alta aptidão leiteira e adaptação ao clima tropical. Cada touro que sai daqui carrega nossa marca: seriedade e paixão pelo Guzerá.
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex gap-3 items-start">
+            <div class="w-10 h-10 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-heart text-stone-300 text-sm"></i>
             </div>
-        </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-
-
-        <!--
-        Home Slider
-        ==================================== -->
-        <section id="home">     
-            <div id="home-carousel" class="carousel slide" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#home-carousel" data-slide-to="1"></li>
-                    <li data-target="#home-carousel" data-slide-to="2"></li>
-                </ol>
-                <!--/.carousel-indicators-->
-
-                <div class="carousel-inner">
-
-                    <div class="item active"  style="background-image: url('img/slider/01.jpg')" >
-                        <div class="carousel-caption">
-                            <div class="animated bounceInRight">
-                                <h2>Guzerá UAU<br></h2>
-                                <h3>Guzerá é a raça, UAU é a marca!</h3>
-                            </div>
-                        </div>
-                    </div>              
-
-                    <div class="item" style="background-image: url('img/slider/02.jpg')">                
-                    </div>
-
-                    <div class="item" style="background-image: url('img/slider/05.jpg')">                 
-                    </div>
-                </div>
-                <!--/.carousel-inner-->
-                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-                    <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
-                        <i class="fa fa-angle-left fa-3x"></i>
-                    </a>
-                    <a class="sl-next" href="#home-carousel" data-slide="next">
-                        <i class="fa fa-angle-right fa-3x"></i>
-                    </a>
-                </nav>
-
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">Paixão pelo Gado</p>
+              <p class="text-stone-500 text-xs leading-relaxed">Amamos o que fazemos e isso se reflete em cada animal.</p>
             </div>
-        </section>
-        <!--
-        End #home Slider
-        ========================== -->
-
-        <!--
-        #contact
-        ========================== -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-
-                    <div class="section-title text-center wow fadeInDown">
-                        <h2>Contato</h2>
-                        <p>Vamos conversar, venha nos visitar, ligue, mande mensagem, carta ou pombo correio.</p>
-                    </div>
-                    
-                    <div class="col-md-8 col-sm-9 wow fadeInLeft">
-                        <div class="contact-form clearfix">
-                            <div class="map-responsive">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15236.11064244905!2d-40.8821269!3d-17.3142145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba3ac2a30532c454!2sGuzer%C3%A1%20UAU!5e0!3m2!1spt-BR!2sbr!4v1593787718400!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div> <!-- end .contact-form -->
-                    </div> <!-- .col-md-8 -->
-
-                    <div class="col-md-4 col-sm-3 wow fadeInRight">
-
-                        <div class="contact-details">
-                            <span>Jacinto Moreira</span>
-                            <p> <a href="https://api.whatsapp.com/send?phone=5533988349125" title="Clique aqui para conversar pelo whatsapp">(33) 98834-9125 <img src="data:image/png;base64,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" alt="Whatsapp" width="14" height="14" /></a></p>
-                            <br><p>guzerauau@gmail.com</p>
-                        </div> <!-- end .contact-details -->
-
-                    </div> <!-- .col-md-4 -->
-
-                </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-10 h-10 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-microscope text-stone-300 text-sm"></i>
             </div>
-        </section>
-        <!--
-        End #contact
-        ========================== -->
-
-        <!--
-        #footer
-        ========================== -->
-        <footer id="footer" class="text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="footer-logo wow fadeInDown">
-                            <img src="img/logo.png" alt="logo" height="80" width="80">
-                        </div>
-
-                        <div class="footer-social wow fadeInUp">
-                            <h3>Venha acompanhar o Guzerá UAU</h3>
-                            <ul class="text-center list-inline">
-                                <li><a href="https://www.facebook.com/guzerauau" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href="https://www.instagram.com/guzerauau/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="copyright">
-                           <p>Guzerá UAU © 2020. Todos os direitos reservados.</p>
-                        </div>
-
-                    </div>
-                </div>
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">Rigor Técnico</p>
+              <p class="text-stone-500 text-xs leading-relaxed">Seleção baseada em DEP, morfologia e produção.</p>
             </div>
-        </footer>
-        <!--
-        End #footer
-        ========================== -->
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-10 h-10 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-certificate text-stone-300 text-sm"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">Animais Registrados</p>
+              <p class="text-stone-500 text-xs leading-relaxed">Todos os tourinhos com registro na ACGB.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-10 h-10 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-handshake text-stone-300 text-sm"></i>
+            </div>
+            <div>
+              <p class="font-semibold text-stone-900 text-sm mb-1">Transparência</p>
+              <p class="text-stone-500 text-xs leading-relaxed">Informações completas e honestas sobre cada animal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ===================== RAÇA ===================== -->
+<section id="raca" class="py-24 md:py-32 bg-stone-50">
+  <div class="max-w-7xl mx-auto px-6">
 
-        <!--
-        JavaScripts
-        ========================== -->
-        
-        <!-- main jQuery -->
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>
-        <!-- Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- jquery.nav -->
-        <script src="js/jquery.nav.js"></script>
-        <!-- Portfolio Filtering -->
-        <script src="js/jquery.mixitup.min.js"></script>
-        <!-- Fancybox -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-        <!-- Parallax sections -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-        <!-- jQuery Appear -->
-        <script src="js/jquery.appear.js"></script>
-        <!-- countTo -->
-        <script src="js/jquery-countTo.js"></script>
-        <!-- owl carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- WOW script -->
-        <script src="js/wow.min.js"></script>
-        <!-- theme custom scripts -->
-        <script src="js/main.js"></script>
-    </body>
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="text-stone-400 text-xs font-bold tracking-[.3em] uppercase mb-4">A Raça</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-stone-900 font-bold leading-tight mb-5">Por que o Guzerá Leiteiro?</h2>
+      <div class="w-12 h-0.5 bg-red-600 mx-auto mb-5"></div>
+      <p class="text-stone-500 leading-relaxed text-[15px]">
+        O Guzerá une rusticidade tropical, longevidade e excelente produção leiteira — perfeita para o pecuarista brasileiro que busca resultado real.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d1">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-sun text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Adaptação Tropical</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Altamente adaptado ao calor brasileiro. Tolerância ao sol e às altas temperaturas sem perda de produção.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d2">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-tint text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Alta Produção Leiteira</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Vacas de elite ultrapassando 6.000 litros por lactação. Genética que valoriza e transforma seu rebanho.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d3">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-shield-alt text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Resistência e Longevidade</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Naturalmente resistente a carrapatos e doenças tropicais. Mais anos de vida produtiva e menor custo sanitário.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d1">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-seedling text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Eficiência no Pasto</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Excelente aproveitamento de forragens tropicais com menor custo de produção. Mais retorno com menos investimento.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d2">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-dna text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Temperamento Dócil</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Animais mansíssimos, de fácil manejo. Reduz estresse no rebanho e aumenta a produção — essencial em vacas leiteiras.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group reveal d3">
+        <div class="w-14 h-14 bg-stone-900 group-hover:bg-red-600 rounded-full flex items-center justify-center mb-6 transition-colors duration-300">
+          <i class="fas fa-trophy text-stone-400 group-hover:text-white text-xl transition-colors duration-300"></i>
+        </div>
+        <h3 class="font-serif text-xl text-stone-900 font-bold mb-3">Leite de Qualidade</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Maior teor de proteína e gordura em relação a raças europeias no trópico. Ideal para queijos artesanais e cooperativas.</p>
+      </div>
+    </div>
+
+    <!-- Stats banner -->
+    <div class="bg-stone-900 p-10 md:p-14 reveal">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-stone-700">
+        <div class="text-center md:px-8">
+          <p class="font-serif text-4xl md:text-5xl text-white font-black">6.000+</p>
+          <p class="text-stone-400 text-xs uppercase tracking-widest mt-2 leading-loose">Litros<br>por lactação</p>
+        </div>
+        <div class="text-center md:px-8">
+          <p class="font-serif text-4xl md:text-5xl text-white font-black">3,8%</p>
+          <p class="text-stone-400 text-xs uppercase tracking-widest mt-2 leading-loose">Gordura<br>média no leite</p>
+        </div>
+        <div class="text-center md:px-8">
+          <p class="font-serif text-4xl md:text-5xl text-white font-black">15+</p>
+          <p class="text-stone-400 text-xs uppercase tracking-widest mt-2 leading-loose">Anos de vida<br>produtiva</p>
+        </div>
+        <div class="text-center md:px-8">
+          <p class="font-serif text-4xl md:text-5xl text-white font-black">100%</p>
+          <p class="text-stone-400 text-xs uppercase tracking-widest mt-2 leading-loose">Adaptado<br>ao trópico</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== GENÉTICA ===================== -->
+<section id="genetica" class="py-24 md:py-32 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+      <!-- Text -->
+      <div class="reveal">
+        <p class="text-stone-400 text-xs font-bold tracking-[.3em] uppercase mb-4">Melhoramento Genético</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-stone-900 font-bold leading-tight mb-5">
+          Seleção com propósito, genética com seriedade
+        </h2>
+        <div class="w-12 h-0.5 bg-red-600 mb-8"></div>
+        <p class="text-stone-500 leading-relaxed mb-10 text-[15px]">
+          Cada decisão de acasalamento é baseada em dados reais — DEPs, histórico de produção das famílias e avaliação morfológica criteriosa. Não selecionamos por acaso.
+        </p>
+        <div>
+          <div class="flex gap-5 items-start py-6 border-b border-stone-100">
+            <span class="font-serif text-5xl font-black text-stone-100 leading-none w-12 flex-shrink-0">01</span>
+            <div>
+              <h4 class="font-semibold text-stone-900 mb-2">Avaliação de DEPs</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Utilizamos DEPs atualizadas para selecionar reprodutores que realmente melhoram produção de leite, conformação e facilidade de parto.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start py-6 border-b border-stone-100">
+            <span class="font-serif text-5xl font-black text-stone-100 leading-none w-12 flex-shrink-0">02</span>
+            <div>
+              <h4 class="font-semibold text-stone-900 mb-2">Avaliação Morfológica Rigorosa</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Cada touro é avaliado quanto a aprumos, úbere, inserção de tetas, profundidade corporal e angularidade leiteira.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start py-6 border-b border-stone-100">
+            <span class="font-serif text-5xl font-black text-stone-100 leading-none w-12 flex-shrink-0">03</span>
+            <div>
+              <h4 class="font-semibold text-stone-900 mb-2">Histórico de Produção das Famílias</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Trabalhamos com famílias de alto potencial, com registros de produção de mãe, avó e bisavó. A genética tem história.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start py-6">
+            <span class="font-serif text-5xl font-black text-stone-100 leading-none w-12 flex-shrink-0">04</span>
+            <div>
+              <h4 class="font-semibold text-stone-900 mb-2">Registro e Rastreabilidade</h4>
+              <p class="text-stone-500 text-sm leading-relaxed">Todos os animais registrados na ABCZ com genealogia comprovada. Transparência total para o comprador.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative reveal d2">
+        <img src="img/slider/04.jpg" alt="Melhoramento Genético Guzerá UAU — aptidão leiteira" class="w-full h-[600px] object-cover shadow-2xl">
+        <div class="absolute top-8 -left-4 bg-emerald-700 text-white text-xs font-bold tracking-widest uppercase px-5 py-3 shadow-lg">
+          <i class="fas fa-dna mr-2"></i>Genética Comprovada
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOURINHOS ===================== -->
+<section id="tourinhos" class="py-24 md:py-32 bg-stone-950">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="text-stone-400 text-xs font-bold tracking-[.3em] uppercase mb-4">Genética à Venda</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-white font-bold leading-tight mb-5">Tourinhos Guzerá Leiteiro</h2>
+      <div class="w-12 h-0.5 bg-red-600 mx-auto mb-5"></div>
+      <p class="text-stone-400 leading-relaxed text-[15px]">
+        Produzimos tourinhos Guzerá Leiteiro registrados na ABCZ, selecionados com rigor genético e vocação para transformar rebanhos leiteiros.
+      </p>
+    </div>
+
+    <!-- Proposta de valor em 3 colunas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+      <div class="border border-stone-800 p-8 text-center reveal d1">
+        <div class="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-5">
+          <i class="fas fa-certificate text-white text-xl"></i>
+        </div>
+        <h3 class="font-serif text-lg text-white font-bold mb-3">Registro ABCZ</h3>
+        <p class="text-stone-400 text-sm leading-relaxed">Todos os animais com genealogia documentada e registro oficial na Associação Brasileira dos Criadores de Zebu.</p>
+      </div>
+      <div class="border border-stone-800 p-8 text-center reveal d2">
+        <div class="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-5">
+          <i class="fas fa-dna text-white text-xl"></i>
+        </div>
+        <h3 class="font-serif text-lg text-white font-bold mb-3">Seleção por DEP</h3>
+        <p class="text-stone-400 text-sm leading-relaxed">Reprodutores escolhidos com base em Diferenças Esperadas na Progênie — ciência a serviço do seu rebanho.</p>
+      </div>
+      <div class="border border-stone-800 p-8 text-center reveal d3">
+        <div class="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-5">
+          <i class="fas fa-tint text-white text-xl"></i>
+        </div>
+        <h3 class="font-serif text-lg text-white font-bold mb-3">Aptidão Leiteira</h3>
+        <p class="text-stone-400 text-sm leading-relaxed">Foco em morfologia de úbere, temperamento dócil e famílias com histórico comprovado de alta produção.</p>
+      </div>
+    </div>
+
+    <!-- Banner "em breve" -->
+    <div class="border border-stone-700 bg-stone-900 p-10 md:p-16 text-center reveal">
+      <div class="max-w-xl mx-auto">
+        <span class="inline-flex items-center gap-2.5 border border-red-800 bg-red-950/50 text-red-400 text-xs font-semibold tracking-widest uppercase px-5 py-2.5 rounded-full mb-8">
+          <i class="fas fa-clock text-xs"></i>
+          Vitrine em preparação
+        </span>
+        <h3 class="font-serif text-3xl md:text-4xl text-white font-bold mb-5 leading-snug">
+          Em breve nossos tourinhos<br>disponíveis com fotos e DEPs
+        </h3>
+        <p class="text-stone-400 text-[15px] leading-relaxed mb-10">
+          Estamos preparando a vitrine completa com fotos individuais, genealogia e dados zootécnicos de cada animal. Enquanto isso, entre em contato direto — temos tourinhos à venda agora.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://api.whatsapp.com/send?phone=5533988349125&text=Olá!%20Tenho%20interesse%20em%20tourinhos%20Guzerá%20Leiteiro%20UAU.%20Quais%20estão%20disponíveis?"
+             target="_blank"
+             class="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white font-bold text-xs tracking-widest uppercase px-8 py-4 rounded transition-all hover:-translate-y-0.5 shadow-lg">
+            <i class="fab fa-whatsapp text-base"></i>Consultar Disponibilidade
+          </a>
+          <a href="#contato"
+             class="inline-flex items-center justify-center gap-3 border border-stone-600 hover:border-stone-400 text-stone-300 hover:text-white font-bold text-xs tracking-widest uppercase px-8 py-4 rounded transition-all hover:-translate-y-0.5">
+            <i class="fas fa-envelope"></i>Enviar E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section id="contato" class="py-24 md:py-32 bg-stone-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Info -->
+      <div class="reveal">
+        <p class="text-stone-400 text-xs font-bold tracking-[.3em] uppercase mb-4">Fale Conosco</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-stone-900 font-bold leading-tight mb-5">
+          Venha conhecer o Guzerá UAU
+        </h2>
+        <div class="w-12 h-0.5 bg-red-600 mb-8"></div>
+        <p class="text-stone-500 leading-relaxed mb-10 text-[15px]">
+          Estamos em Crisólita, Minas Gerais, prontos para receber você. Venha visitar a fazenda, ver os animais pessoalmente e conhecer nosso trabalho de perto.
+        </p>
+        <div class="space-y-5 mb-10">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-map-marker-alt text-stone-300"></i>
+            </div>
+            <div class="pt-1">
+              <p class="font-semibold text-stone-900 text-xs uppercase tracking-widest mb-1">Localização</p>
+              <p class="text-stone-500 text-sm">Crisólita, Minas Gerais — Brasil</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fab fa-whatsapp text-stone-300 text-lg"></i>
+            </div>
+            <div class="pt-1">
+              <p class="font-semibold text-stone-900 text-xs uppercase tracking-widest mb-1">WhatsApp</p>
+              <a href="https://api.whatsapp.com/send?phone=5533988349125" target="_blank"
+                 class="text-stone-500 text-sm hover:text-red-500 transition-colors">(33) 98834-9125</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-envelope text-stone-300"></i>
+            </div>
+            <div class="pt-1">
+              <p class="font-semibold text-stone-900 text-xs uppercase tracking-widest mb-1">E-mail</p>
+              <a href="mailto:guzerauau@gmail.com"
+                 class="text-stone-500 text-sm hover:text-red-500 transition-colors">guzerauau@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/guzerauau" target="_blank"
+             class="w-11 h-11 bg-blue-600 hover:bg-blue-500 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="https://www.instagram.com/guzerauau/" target="_blank"
+             class="w-11 h-11 text-white rounded-full flex items-center justify-center transition-opacity hover:opacity-80 shadow-sm"
+             style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)">
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5533988349125" target="_blank"
+             class="w-11 h-11 bg-green-600 hover:bg-green-500 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+            <i class="fab fa-whatsapp text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="rounded-sm overflow-hidden shadow-xl h-[440px] reveal d2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15236.11064244905!2d-40.8821269!3d-17.3142145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba3ac2a30532c454!2sGuzer%C3%A1%20UAU!5e0!3m2!1spt-BR!2sbr!4v1593787718400!5m2!1spt-BR!2sbr"
+          class="w-full h-full border-0"
+          allowfullscreen
+          loading="lazy"
+          title="Localização Guzerá UAU — Crisólita, MG">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-stone-950 text-stone-400">
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-stone-800">
+      <div>
+        <img src="img/logo.png" alt="Guzerá UAU" class="h-14 w-auto mb-5">
+        <p class="text-sm leading-relaxed text-stone-500">Genética séria e paixão pelo Guzerá Leiteiro. Tourinhos de alta linhagem para transformar seu rebanho.</p>
+      </div>
+      <div>
+        <h4 class="font-serif text-stone-200 font-semibold mb-5 pb-3 border-b border-stone-800 text-base">Navegação</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#hero"      class="hover:text-red-500 transition-colors">Home</a></li>
+          <li><a href="#sobre"     class="hover:text-red-500 transition-colors">Sobre a Fazenda</a></li>
+          <li><a href="#raca"      class="hover:text-red-500 transition-colors">A Raça Guzerá</a></li>
+          <li><a href="#genetica"  class="hover:text-red-500 transition-colors">Melhoramento Genético</a></li>
+          <li><a href="#tourinhos" class="hover:text-red-500 transition-colors">Tourinhos à Venda</a></li>
+          <li><a href="#contato"   class="hover:text-red-500 transition-colors">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-stone-200 font-semibold mb-5 pb-3 border-b border-stone-800 text-base">Contato</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="https://api.whatsapp.com/send?phone=5533988349125" target="_blank" class="hover:text-red-500 transition-colors">(33) 98834-9125</a></li>
+          <li><a href="mailto:guzerauau@gmail.com" class="hover:text-red-500 transition-colors">guzerauau@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/guzerauau/" target="_blank" class="hover:text-red-500 transition-colors">@guzerauau</a></li>
+          <li><a href="https://www.facebook.com/guzerauau" target="_blank" class="hover:text-red-500 transition-colors">facebook.com/guzerauau</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8">
+      <p class="text-xs text-stone-600">© 2025 Guzerá UAU — Todos os direitos reservados. Crisólita, MG.</p>
+      <div class="flex gap-3">
+        <a href="https://www.facebook.com/guzerauau" target="_blank"
+           class="w-9 h-9 border border-stone-700 hover:border-red-600 text-stone-500 hover:text-red-500 rounded-full flex items-center justify-center transition-all text-sm">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/guzerauau/" target="_blank"
+           class="w-9 h-9 border border-stone-700 hover:border-red-600 text-stone-500 hover:text-red-500 rounded-full flex items-center justify-center transition-all text-sm">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5533988349125" target="_blank"
+           class="w-9 h-9 border border-stone-700 hover:border-red-600 text-stone-500 hover:text-red-500 rounded-full flex items-center justify-center transition-all text-sm">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// NAVBAR
+const navbar = document.getElementById('navbar');
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-menu');
+const burgerIcon = document.getElementById('burger-icon');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    navbar.classList.add('bg-stone-950', 'shadow-xl');
+  } else {
+    navbar.classList.remove('bg-stone-950', 'shadow-xl');
+  }
+});
+
+burger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  burgerIcon.className = mobileMenu.classList.contains('hidden') ? 'fas fa-bars text-xl' : 'fas fa-times text-xl';
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+  burgerIcon.className = 'fas fa-bars text-xl';
+}));
+
+// SLIDER
+const slides = document.querySelectorAll('#slider-track > div');
+const dots = document.querySelectorAll('.slider-dot');
+let cur = 0, timer;
+
+function goTo(n) {
+  slides[cur].style.opacity = '0';
+  dots[cur].style.width = '8px';
+  dots[cur].style.background = 'rgba(255,255,255,0.3)';
+  cur = (n + slides.length) % slides.length;
+  slides[cur].style.opacity = '1';
+  dots[cur].style.width = '32px';
+  dots[cur].style.background = '#dc2626';
+}
+function start() { timer = setInterval(() => goTo(cur + 1), 5000); }
+function reset() { clearInterval(timer); start(); }
+
+document.getElementById('slide-next').addEventListener('click', () => { goTo(cur + 1); reset(); });
+document.getElementById('slide-prev').addEventListener('click', () => { goTo(cur - 1); reset(); });
+dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); reset(); }));
+start();
+
+// REVEAL
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('shown'); io.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
 </html>
